@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Music Player</title>
+</head>
+    <body>
+        <h1>Muisc player</h1>
+
+        <!-- Container -->
+        <div class="music-container">
+
+            <!-- Info -->
+            <div class="music-info">
+
+                <h4 id="title">Title</h4>
+                <h6 id="artist">artist</h6>
+                <h5 id="time">00:00 / 00:00</h5>
+                <div class="progress-container">
+                    <div class="progress"></div>
+                </div>
+
+            </div>
+
+            <!-- Audio -->
+            <audio src="music/Salir de la melancolía.ogg" id="audio"></audio>
+            
+            <div class="img-container">
+                <img src="Img/PeperinaTapa.jpg" alt="music-cover" id="cover">
+            </div>
+
+            <!-- Navigation -->
+            <div class="navigation">
+                
+                <button id="prev" class="action-btn">
+                    <i class="fas fa-backward"></i>
+                </button>
+                
+                <button id="play" class="action-btn action-btn-big">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button id="stop" class="action-btn action-btn-medium">
+                    <i class="fas fa-stop"></i>
+                </button>
+
+                <button id="next" class="action-btn">
+                    <i class="fas fa-forward"></i>
+                </button>
+
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
